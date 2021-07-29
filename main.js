@@ -39,7 +39,6 @@ window.onload = function() {
             drawLines(arr);
         }
     }
-
     initLines();
     drawLines(sortingArray);
     var intervalID = setInterval(bubbleSort, 1, sortingArray);
