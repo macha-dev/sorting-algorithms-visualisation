@@ -14,6 +14,7 @@ window.onload = function() {
 
     function drawLines(arr)
     {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         for (var i=0; i<arr.length; i++)
         {
             ctx.beginPath(); 
@@ -35,7 +36,6 @@ window.onload = function() {
                 arr[i+1] = temp;
             }
             //console.log(arr);
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
             drawLines(arr);
         }
     }
