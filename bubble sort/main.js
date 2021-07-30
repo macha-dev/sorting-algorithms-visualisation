@@ -6,7 +6,7 @@ window.onload = function() {
 
     function initLines()
     {
-        for (var i=0; i<500; i++)
+        for (var i=0; i<250; i++)
         {
             sortingArray[i] = Math.floor(((Math.random())*500))
         }
@@ -17,8 +17,8 @@ window.onload = function() {
         for (var i=0; i<arr.length; i++)
         {
             ctx.beginPath(); 
-            ctx.moveTo((i+1)*2+0.5, 0);
-            ctx.lineTo((i+1)*2+0.5, arr[i]);
+            ctx.moveTo((i+1)*4+0.5, 0);
+            ctx.lineTo((i+1)*4+0.5, arr[i]);
             ctx.stroke();
             ctx.moveTo(0,0);
         }
